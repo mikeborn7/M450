@@ -29,4 +29,12 @@ public class PriceCalculationTest {
     }
 }
 
-//2 Testfälle für drei+ und fünf+ Extras
+/*2 Testfälle für drei+ und fünf+ Extras.
+
+if (extras >= 3)
+    addon_discount = 10;
+else if (extras >= 5)
+    addon_discount = 15;
+else
+    addon_discount = 0;
+*/

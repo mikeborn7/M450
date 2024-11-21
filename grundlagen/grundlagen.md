@@ -10,3 +10,25 @@ Ein Software-Fehler ist ein Defekt im Code, der dazu führt, dass die Software n
 javac PriceCalculation.java
 javac PriceCalculationTest.java
 java PriceCalculationTest
+
+Fehler in der Logik des Codes: 
+
+if (extras >= 3)
+    addon_discount = 10;
+else if (extras >= 5)
+    addon_discount = 15;
+else
+    addon_discount = 0;
+
+ist falsch, weil es immer Rabatt von 3+ nehmen wird und nicht 5+.
+Korrektur: 
+
+if (extras >= 5)
+    addon_discount = 15;
+else if (extras >= 3)
+    addon_discount = 10;
+else
+    addon_discount = 0;
+
+
+(Angepasst in unserem Code)
